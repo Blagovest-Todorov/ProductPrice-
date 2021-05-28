@@ -32,7 +32,6 @@ namespace ProductShop
                 }
 
                 string[] data = inputInfo.Split(", ", StringSplitOptions.RemoveEmptyEntries);
-
                 string shop = data[0];
                 string product = data[1];
                 double price = double.Parse(data[2]);
@@ -47,7 +46,6 @@ namespace ProductShop
                     {                        
                         shops[shop].Add(product, price); 
                     }
-
                 }
                 else // shops does not contain keyShop
                 {
